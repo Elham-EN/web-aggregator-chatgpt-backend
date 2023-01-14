@@ -54,7 +54,7 @@ async function chatgptFunction(content) {
   };
 }
 
-app.post("/api/url", (req, res) => {
+app.post("api", (req, res) => {
   const { url } = req.body;
 
   (async () => {
