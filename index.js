@@ -7,7 +7,7 @@ const puppeteer = require("puppeteer");
 import { ChatGPTAPIBrowser } from "chatgpt";
 const cors = require("cors");
 const app = express();
-const PORT = process.env.SERVER_PORT;
+const PORT = parseInt(process.env.SERVER_PORT);
 //middleware that is used to parse incoming request bodies that are sent
 //in the x-www-form-urlencoded format and is used to extract the data from
 //the request body and make it available on the request object (req.body)
