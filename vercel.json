@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "builds": [{ "src": "src/index.js", "use": "@vercel/node" }],
   "routes": [
-    { "src": "api/(.*)", "dest": "index.js" },
-    { "src": "api/(.*)", "headers": { "Access-Control-Allow-Origin": "*" } }
+    { "src": "src/api/(.*)", "dest": "src/index.js" },
+    { "src": "src/api/(.*)", "headers": { "Access-Control-Allow-Origin": "*" } }
   ]
 }
