@@ -4,10 +4,5 @@
   "routes": [
     { "src": "api/(.*)", "dest": "index.js" },
     { "src": "api/(.*)", "headers": { "Access-Control-Allow-Origin": "*" } }
-  ],
-  "env": {
-    "SERVER_PORT": "8000",
-    "CHAT_GPT_EMAIL": "@vercel-secrets.CHAT_GPT_EMAIL",
-    "CHAT_GPT_PASSWORD": "@vercel-secrets.CHAT_GPT_PASSWORD"
-  }
+  ]
 }
