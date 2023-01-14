@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
   res.json({
     message: "Hello world",
   });
@@ -54,7 +54,7 @@ async function chatgptFunction(content) {
   };
 }
 
-app.post("api", (req, res) => {
+app.post("/", (req, res) => {
   const { url } = req.body;
 
   (async () => {
@@ -112,3 +112,5 @@ app.post("api", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
+
+module.exports = app;
